@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1, #div2 {
+  float: left;
+  width: 160px;
+  height: 160px;
+  margin: 2px;
+  padding: 6px;
+  border: 1px solid rgb(253, 223, 219);
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<h2>MOSAIC</h2>
+<p>Qoidalar : <br>
+    1. Rasmni bir biriga qo`ymang :) <br>
+    2. Birinchi qoidaga rioya qiling XD 
+
+</p>
+
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="./shot.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="160" height="160">
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="./shot2.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="160" height="160">
+  </div>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="./1.jpg" draggable="true" ondragstart="drag(event)" id="drag3" width="160" height="160">
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="./2.jpg" draggable="true" ondragstart="drag(event)" id="drag4" width="160" height="160">
+  </div>
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="./photo_2021-02-02_18-48-37.jpg" draggable="true" ondragstart="drag(event)" id="drag5" width="160" height="160">
+</div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="./photo_2021-02-02_18-49-01.jpg" draggable="true" ondragstart="drag(event)" id="drag6" width="160" height="160">
+</div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="./photo_2021-02-02_18-49-06.jpg" draggable="true" ondragstart="drag(event)" id="drag7" width="160" height="160">
+  </div>
+
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</body>
+</html>
